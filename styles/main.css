@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: 'Inter var';
   font-style: normal;
@@ -15,6 +18,7 @@
 }
 
 body {
+  /* background-image: url(../public/images/background.jpg); */
   font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -24,6 +28,7 @@ body {
   font-variation-settings: 'wght' 450;
   font-variant: common-ligatures contextual;
   letter-spacing: -0.02em;
+  margin: auto;
 }
 b,
 strong,
@@ -35,6 +40,8 @@ h6 {
 }
 h1 {
   font-variation-settings: 'wght' 850;
+  color:rgb(103, 57, 230) !important;
+  text-shadow: 2px 2px #98adf0;
 }
 h2 {
   font-variation-settings: 'wght' 750;
@@ -52,8 +59,28 @@ details summary {
   cursor: pointer;
 }
 
-img.next-image {
-  margin: 0;
+img.portfolio-image {
+  margin: auto;
+  width: 700px;
+  height: 350px;
+  border-radius: 15px;
+  object-fit: fill;
+}
+
+img.profile-image {
+  margin: auto;
+  width: 600px;
+  height: 350px;
+  border-radius: 15px;
+}
+
+img.logo {
+  position: static;
+  width: 200px;
+  height: 100px;
+  border-radius: 15px;
+  object-position: center top;  
+  margin-top: -25%;
 }
 
 .prose a {
@@ -61,5 +88,32 @@ img.next-image {
 }
 
 .nav-line .nav-link {
-  color: #69778c;
+  color: #7fb6e9;
+}
+
+hr {
+  height: 3px;
+  background-color:rgb(139, 241, 255);
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+/* unvisited link */
+a:link {
+  color: rgb(68, 0, 194);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(91, 127, 243);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(85, 83, 243);
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }
