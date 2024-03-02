@@ -11,7 +11,6 @@
     "@mdx-js/react": "^3.0.1",
     "@tailwindcss/typography": "^0.5.10",
     "gray-matter": "^4.0.3",
-    "mdx-embed": "^1.1.2",
     "next": "^13.5.6",
     "nextra": "^2.13.2",
     "nextra-theme-blog": "^2.13.2",
