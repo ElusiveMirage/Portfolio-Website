@@ -3,6 +3,7 @@ type: page
 title: About
 ---
 import Image from 'next/image'
+import { Icon } from '@iconify/react'; // Import the entire Iconify library.
 
 <Image
   src="/assets/sig.png"
@@ -35,7 +36,20 @@ portfolio is able to showcase that!
 
 ## Links
 
-- GitHub [@ElusiveMirage](https://https://github.com/ElusiveMirage)
-- LinkedIn [@Javier Tan](https://linkedin.com/in/javier-tan-93182a175)
-- Instagram [@a_elusive_mirage](https://instagram.com/a_elusive_mirage)
-- Email jtan.jingjie@gmail.com
+<div style={{display: "flex", alignContent: "left"}}>
+  <Icon inline icon="mdi:github" height="24" width="24"/> <span>GitHub [@ElusiveMirage](https://https://github.com/ElusiveMirage)</span>
+</div>
+
+<div style={{display: "flex", alignContent: "left"}}>
+  <Icon inline icon="skill-icons:linkedin" height="24" width="24"/> <span>LinkedIn [@Javier Tan](https://linkedin.com/in/javier-tan-93182a175)</span>
+</div>
+
+<div style={{display: "flex", alignContent: "left"}}>
+  <Icon inline icon="skill-icons:instagram" height="24" width="24"/> <span>Instagram [@a_elusive_mirage](https://instagram.com/a_elusive_mirage)</span>
+</div>
+
+<div style={{display: "flex", alignContent: "left"}}>
+  <Icon inline icon="logos:google-gmail" height="24" width="24"/> <span>Email jtan.jingjie@gmail.com</span>
+</div>
+
+
