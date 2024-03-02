@@ -42,9 +42,15 @@ h1 {
   font-variation-settings: 'wght' 850;
   color:rgb(103, 57, 230) !important;
   text-shadow: 2px 2px #98adf0;
+  margin-top: 5% !important;
+  margin-bottom: -2% !important;
+
 }
 h2 {
   font-variation-settings: 'wght' 750;
+  color:rgb(103, 57, 230) !important;
+  text-shadow: 2px 2px #98adf0;
+  margin-bottom: 1% !important;
 }
 
 @media screen and (min-device-pixel-ratio: 1.5),
@@ -76,11 +82,12 @@ img.profile-image {
 
 img.logo {
   position: static;
-  width: 200px;
-  height: 100px;
-  border-radius: 15px;
-  object-position: center top;  
-  margin-top: -25%;
+  width: 350px;
+  height: 175px;
+  margin-top: -32% !important;
+  margin-bottom: -2% !important;
+  display: block;
+  object-position: top;
 }
 
 .prose a {
