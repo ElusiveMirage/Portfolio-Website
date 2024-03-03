@@ -20,7 +20,7 @@ async function generate() {
         path.join(__dirname, '..', 'pages', 'posts', name)
       )
       const frontmatter = matter(content)
-
+    
       allPosts.push({
         title: frontmatter.data.title,
         url: '/posts/' + name.replace(/\.mdx?/, ''),
@@ -32,7 +32,7 @@ async function generate() {
     })
   )
 
-  allPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
+  allPosts.sort((a, b) => a.title.localeCompare(b.title))
   allPosts.forEach((post) => {
       feed.item(post)
   })
