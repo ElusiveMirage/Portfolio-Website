@@ -19,7 +19,7 @@
 
 body {
   background-image: url(../public/assets/background.png);
-  background-size: contain;
+  background-size: auto;
   background-position: top;
   background-repeat: no-repeat;
   font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
@@ -43,7 +43,7 @@ h6 {
 }
 h1 {
   font-variation-settings: 'wght' 650;
-  color: #3e8ede !important;
+  color: #3e6be6 !important;
   text-shadow: 2px 2px #abccf7;
   margin-top: 2% !important;
   margin-bottom: -1% !important;
@@ -51,7 +51,9 @@ h1 {
 }
 h2 {
   font-variation-settings: 'wght' 550;
+  color: rgb(10, 157, 255) !important;
   margin-bottom: 1% !important;
+  width: 150%;
 }
 
 @media screen and (min-device-pixel-ratio: 1.5),
@@ -75,24 +77,14 @@ img.portfolio-image {
   margin: 1%;
 }
 
-img.portfolio-image-left {
-  width: 250px;
+img.portfolio-image-poster {
+  width: 350px;
   height: 500px;
   border-radius: 15px;
   object-fit: fill;
   position: relative;
-  display: inline-block;
-  margin-left: 10%;
-}
-
-img.portfolio-image-right {
-  width: 250px;
-  height: 500px;
-  border-radius: 15px;
-  object-fit: fill;
-  position: relative;
-  display: inline-block;
-  margin-left: 10%;
+  display: block;
+  object-position: center;
 }
 
 img.profile-image {
@@ -104,7 +96,7 @@ img.profile-image {
 
 img.logo {
   position: static;
-  width: 350px;
+  width: 55%;
   height: 175px;
   margin-top: -32% !important;
   margin-bottom: -2% !important;
@@ -134,22 +126,15 @@ img.link-arrow {
 
 hr {
   height: 4px;
-  background-color:rgb(148, 212, 255);
+  background-color:rgb(148, 255, 250);
   margin-top: 20px !important;
   margin-bottom: 20px !important;
 }
 
 hr.top_hr {
   height: 4px;
-  background-color:rgb(148, 212, 255);
+  background-color:rgb(148, 255, 250);
   margin-top: -5% !important;
-  margin-bottom: 20px !important;
-}
-
-hr.bottom_hr {
-  height: 4px;
-  background-color:rgb(148, 212, 255);
-  margin-top: 20px !important;
   margin-bottom: 20px !important;
 }
 
@@ -172,3 +157,8 @@ a:hover {
 a:active {
   color: blue;
 }
+
+time {
+  display: none !important;
+}
+

@@ -1,18 +1,46 @@
 ---
 title: 'Final Year Project - SIM-UOW BCompSc'
 description: Final year capstone project for my Bachelor of Computer Science.
-date: '2024-02-17'
+date: '2024-01-02'
 tag: Python
 ---
 
 import Image from 'next/image'
+import { Icon } from '@iconify/react'; // Import the entire Iconify library.
 
----
+<hr className="top_hr" />
+
+## Final Year Project, The Hand-Tracking-Nator
 
 <Image
   src="/assets/fyp.png"
+  alt="Usage demonstration"
   width={1125}
   height={750}
   priority
   className="portfolio-image"
 />
+
+For my bachelor's final year project, the topic my group was assigned was to research and develop a program related to 
+gaming with our bare hands, from a machine learning approach. Towards this end, my team decided to pursue the approach of 
+developing a general use, customizable software for translating hand gestures to keyboard input that can be effectively 
+used for a wide selection of different games.
+
+The final product of our efforts is the Hand-Tracking-Nator, a program developed in Python, with the Mediapipe, OpenCV
+and Tensorflow libraries at its core. The program is capable of smooth and accurate hand gesture recognition using a 
+dataset of roughly 60,000 data points, and triggering keyboard input by performing its corresponding hand gesture, as
+well as a host of other features for user customization of the software.
+
+I did the integration of OpenCV and Mediapipe into our project for implementing the frame capture from camera input 
+and hand landmark detection respectively. These features are then used for recording data points of the performed
+hand gestures into a dataset, which is then processed using Tensorflow's random forest algorithm to build the machine
+learning model used for the gesture prediction, the results of which is displayed by our program's frontend user interface.
+
+## Relevant links:
+
+<div style={{display: "flex", alignContent: "left"}}>
+  <Icon inline icon="logos:youtube-icon" height="24" width="24"/> <span>[Demo video](https://youtu.be/2HMo-JOqA3Q)</span>
+</div>
+<div style={{display: "flex", alignContent: "left", marginBottom: "-5%"}}>
+  <Icon inline icon="mdi:github" height="24" width="24"/> <span>[Github repo](https://github.com/littledragon12344/CSIT321-FYP-23-S4-08)</span>
+</div>
