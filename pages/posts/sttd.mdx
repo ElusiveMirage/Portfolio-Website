@@ -1,0 +1,62 @@
+---
+title: 'Group Project - SIM-UOW BCompSc'
+description: Group project for my bachelor's Game Engine Essentials module.
+date: '2024-01-05'
+tag: Unity, C#
+---
+
+import Image from 'next/image'
+import { Icon } from '@iconify/react'; // Import the entire Iconify library.
+
+<hr className="top_hr" />
+
+## Leap of Legends - 3D sidescrolling platformer
+
+<Image
+  src="/assets/LoL_1.png"
+  alt="Banner"
+  width={1125}
+  height={750}
+  priority
+  className="portfolio-image"
+/>
+
+Leap of Legends is a 3D side scrolling platformer made in Unity for my university's Game Engine Essentials module. 
+For this group project, I took on the role of project lead and gameplay programmer, coordinating the development
+tasks, technical design and guiding my team members by virtue of my extensive prior experience developing in Unity.
+
+I did the implementation of most of the player controller, combat system, game mechanics and their integration with our 
+backend manager classes, as well as data persistence/serialization of the player's progress and current game state to a file
+when they reach a checkpoint, using the Newtonsoft JSON package to do so.
+
+<Image
+  src="/assets/LoL_2.png"
+  alt="Gameplay"
+  width={1125}
+  height={750}
+  priority
+  className="portfolio-image"
+/>
+
+<Image
+  src="/assets/LoL_3.png"
+  alt="Pause"
+  width={1125}
+  height={750}
+  priority
+  className="portfolio-image"
+/>
+
+## Relevant links:
+
+<div style={{display: "flex", alignContent: "left"}}>
+  <Icon inline icon="logos:youtube-icon" height="24" width="24"/> <span>[Gameplay video](https://youtu.be/BS5SKAUfrmI)</span>
+</div>
+<div style={{display: "flex", alignContent: "left"}}>
+  <Icon inline icon="fa-brands:itch-io" height="24" width="24"/> <span>[Play on itch.io](https://elusivemirage.itch.io/leap-of-legends)</span>
+</div>
+<div style={{display: "flex", alignContent: "left", marginBottom: "5%"}}>
+  <Icon inline icon="mdi:github" height="24" width="24"/> <span>[Github repository](https://github.com/icony36/platformer-game)</span>
+</div>
+
+
